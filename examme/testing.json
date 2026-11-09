@@ -1,0 +1,48 @@
+{
+ "app": "ExamMe",
+ "updated": "2026-11-09",
+ "items": [
+  {
+   "id": "93488d43",
+   "title": "Lesson before each exam",
+   "steps": "Pick a topic and start an exam. A short lesson should come first. Check it's clear and matches the topic.",
+   "status": "new"
+  },
+  {
+   "id": "b95d61a7",
+   "title": "Exams written for you",
+   "steps": "Start an exam on any topic. Questions should load quickly and make sense for what you're studying.",
+   "status": "new"
+  },
+  {
+   "id": "8cf007c3",
+   "title": "Take an exam",
+   "steps": "Answer every question type you get (multiple choice, true or false, short answer). Check feedback and explanations after each one.",
+   "status": "test"
+  },
+  {
+   "id": "a79de09c",
+   "title": "Results and mistakes",
+   "steps": "Finish an exam and open the results. Your score, the questions you missed and the explanations should all show.",
+   "status": "test"
+  },
+  {
+   "id": "88a1df45",
+   "title": "Exams that adapt",
+   "steps": "Take a second exam on the same topic. It should focus more on what you got wrong the first time.",
+   "status": "test"
+  },
+  {
+   "id": "90ce3065",
+   "title": "Subjects and topics",
+   "steps": "From Home, open subjects, add a subject and a topic with a learning goal, then rename or delete one.",
+   "status": "test"
+  },
+  {
+   "id": "11bbe844",
+   "title": "Continue where you left off",
+   "steps": "Leave an exam halfway, close the app, reopen it and use Continue on Home.",
+   "status": "test"
+  }
+ ]
+}

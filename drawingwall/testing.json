@@ -1,0 +1,42 @@
+{
+ "app": "Drawing Wall",
+ "updated": "2026-11-09",
+ "items": [
+  {
+   "id": "60cd89aa",
+   "title": "Add drawings from a photo",
+   "steps": "Take a photo of a page with a few drawings. Each drawing should be found, cut out along its outline and added to the wall.",
+   "status": "test"
+  },
+  {
+   "id": "348d2fd7",
+   "title": "Faint or pale drawings",
+   "steps": "Try pencil sketches or light crayon. Tell us if any drawing is missed or cut out badly.",
+   "status": "test"
+  },
+  {
+   "id": "3f64ecb7",
+   "title": "Name a drawing",
+   "steps": "Tap a drawing on the wall and give it a name. Close and reopen the app: the name should stay.",
+   "status": "test"
+  },
+  {
+   "id": "66bc84a3",
+   "title": "Story book",
+   "steps": "Open Story book, add characters from the wall, pick a place and a kind of story, and read it. Try moving a character.",
+   "status": "new"
+  },
+  {
+   "id": "37a047cf",
+   "title": "Save a story as PDF",
+   "steps": "In a finished story, save the book as a PDF and open it on your phone.",
+   "status": "new"
+  },
+  {
+   "id": "78710d43",
+   "title": "Back button",
+   "steps": "Open the review sheet and press Android's back button. It should close the sheet, not the app.",
+   "status": "test"
+  }
+ ]
+}

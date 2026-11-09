@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become a tester · Drawing Wall</title>
+<meta name="description" content="Try Drawing Wall on Android before launch. Join the tester team in a few steps.">
+<meta name="theme-color" content="#0c0c0c">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.steps { list-style: none; padding: 0; margin: 24px 0; counter-reset: s; }
+.steps li { counter-increment: s; position: relative; padding: 18px 18px 18px 64px; margin: 12px 0;
+  background: var(--soft); border-radius: 14px; }
+.steps li::before { content: counter(s); position: absolute; left: 18px; top: 18px; width: 32px; height: 32px;
+  border-radius: 50%; color: #16130e; font-weight: 800; display: grid; place-items: center; font-family: var(--head); }
+.steps li:nth-child(1)::before { background: var(--coral); }
+.steps li:nth-child(2)::before { background: var(--sun); }
+.steps li:nth-child(3)::before { background: var(--sky); }
+.steps h2 { border: 0; margin: 0 0 4px; padding: 0; font-size: 18px; }
+.steps p { margin: 0 0 12px; }
+.steps p:last-child { margin-bottom: 0; }
+@media (max-width: 420px) { .steps li { padding-left: 58px; } .steps li::before { left: 14px; } }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">Drawing Wall</a></header>
+
+<h1>Become a tester</h1>
+<p class="meta">Android · Free · Takes about a minute</p>
+
+<p>Use Drawing Wall before it launches and help shape it. Testers get the newest features first, and your feedback goes straight to the person building it.</p>
+
+<ol class="steps">
+<li>
+  <h2>Send us your Google Play email</h2>
+  <p>Drawing Wall is in a closed test on Google Play, so we add each tester by hand. Email us the Gmail address that's signed in to Google Play on your Android phone.</p>
+  <!-- TODO: swap to Google Group join link -->
+  <a class="button" href="mailto:tarynmaloney5@gmail.com?subject=Drawing%20Wall%20tester%20request&amp;body=Hi%2C%20I'd%20like%20to%20test%20Drawing%20Wall.%0A%0AThe%20Gmail%20address%20I%20use%20on%20Google%20Play%3A%20%0A%0AMy%20phone%20model%20(optional)%3A%20">Email my request</a>
+</li>
+<li>
+  <h2>Watch for our reply</h2>
+  <p>We'll add you to the test and email you the Google Play link.</p>
+</li>
+<li>
+  <h2>Install from Google Play</h2>
+  <p>Open the link on your phone (or on a computer signed in to the same account), tap <strong>Become a tester</strong>, then download Drawing Wall from Google Play. Create your account in the app to get started.</p>
+</li>
+</ol>
+
+<p>Once you're in, see <a href="testing.html">what to test</a> for the features we most need help with.</p>
+
+<div class="box">
+<p><strong>Please keep the app installed for at least 14 days.</strong> Google needs testers to stay on for two weeks before Drawing Wall can launch publicly.</p>
+</div>
+
+<h2>Questions</h2>
+<p><strong>Is there an iPhone version?</strong> Not yet. Drawing Wall is on Android first.</p>
+<p><strong>"Become a tester" doesn't show up?</strong> Make sure you're signed in to Google Play with the same Gmail address you sent us, then wait a few minutes and try again.</p>
+<p><strong>Do I need real drawings?</strong> They help most, but new walls start with example drawings, so you can try Story Book straight away.</p>
+<p><strong>Feedback or problems?</strong> Email <a href="mailto:tarynmaloney5@gmail.com?subject=Drawing%20Wall%20tester%20feedback">tarynmaloney5@gmail.com</a>.</p>
+
+<footer>
+<a href="./">Home</a><a href="testing.html">What to test</a><a href="testers.html">Become a tester</a><a href="privacy.html">Privacy</a>
+<p>© 2026 Taryn Maloney. All rights reserved.</p>
+</footer>
+</main>
+</body>
+</html>

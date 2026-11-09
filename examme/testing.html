@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What to test · ExamMe</title>
+<meta name="description" content="Features ExamMe testers should try right now.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+.feat { background: var(--soft); border-radius: 14px; padding: 16px 18px; margin: 12px 0; }
+.feat h2 { border: 0; margin: 0 0 4px; padding: 0; font-size: 17px; display: flex; gap: 10px; align-items: center;
+  flex-wrap: wrap; }
+.feat p { margin: 0; }
+.tag { font-size: 12px; font-weight: 700; border-radius: 999px; padding: 2px 10px; background: #dcfce7; color: #166534; }
+@media (prefers-color-scheme: dark) { .tag { background: #10291a; color: #4ade80; } }
+.loading { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">ExamMe</a></header>
+
+<h1>What to test</h1>
+<p class="meta" id="updated">Thanks for testing ExamMe</p>
+
+<p>Try these in the app and tell us what works, what breaks and what's confusing. Send screenshots if you can.
+Not a tester yet? <a href="testers.html">Become a tester</a>.</p>
+
+<div id="list"><p class="loading">Loading the list…</p></div>
+
+<div class="box">
+<p><strong>Found a problem or have an idea?</strong> Email
+<a href="mailto:tarynmaloney5@gmail.com?subject=ExamMe%20tester%20feedback">tarynmaloney5@gmail.com</a>
+with what you tried, what happened, and your phone model. If a question is wrong, you can also report it in the app.</p>
+</div>
+
+<footer>
+<a href="./">Home</a><a href="testing.html">What to test</a><a href="testers.html">Become a tester</a><a href="privacy.html">Privacy</a>
+<p>© 2026 ExamMe. All rights reserved. Created by Taryn Maloney.</p>
+</footer>
+</main>
+<script>
+fetch("testing.json", { cache: "no-store" }).then(r => r.json()).then(data => {
+  const list = document.getElementById("list");
+  const items = (data.items || []).filter(it => it.status !== "done");
+  if (data.updated) {
+    const d = new Date(data.updated + "T12:00:00");
+    document.getElementById("updated").textContent =
+      "Updated " + d.toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" });
+  }
+  list.innerHTML = items.length ? "" : "<p>Nothing new to test right now. Keep using the app as usual.</p>";
+  for (const it of items) {
+    const box = document.createElement("section"); box.className = "feat";
+    const h = document.createElement("h2"); h.textContent = it.title;
+    if (it.status === "new") { const t = document.createElement("span"); t.className = "tag"; t.textContent = "New"; h.append(t); }
+    const p = document.createElement("p"); p.textContent = it.steps;
+    box.append(h, p); list.append(box);
+  }
+}).catch(() => {
+  document.getElementById("list").innerHTML = "<p>The list couldn't load. Please refresh the page.</p>";
+});
+</script>
+</body>
+</html>

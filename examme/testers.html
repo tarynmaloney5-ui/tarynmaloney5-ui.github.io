@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become a tester · ExamMe</title>
+<meta name="description" content="Try ExamMe on Android before it launches. Send your Google Play email and we'll add you to the test.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+.steps { list-style: none; padding: 0; margin: 24px 0; counter-reset: s; }
+.steps li { counter-increment: s; position: relative; padding: 18px 18px 18px 64px; margin: 12px 0;
+  background: var(--soft); border-radius: 14px; }
+.steps li::before { content: counter(s); position: absolute; left: 18px; top: 18px; width: 32px; height: 32px;
+  border-radius: 50%; background: var(--btn); color: var(--btn-ink); font-weight: 700; display: grid; place-items: center; }
+.steps h2 { border: 0; margin: 0 0 4px; padding: 0; font-size: 18px; }
+.steps p { margin: 0 0 12px; }
+.steps p:last-child { margin-bottom: 0; }
+@media (max-width: 420px) { .steps li { padding-left: 58px; } .steps li::before { left: 14px; } }
+</style>
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">ExamMe</a></header>
+
+<h1>Become a tester</h1>
+<p class="meta">Android · Free · Takes a couple of minutes</p>
+
+<p>Use ExamMe before it launches and help shape it. Testers get new features first, and your feedback goes straight to the person building it.</p>
+
+<ol class="steps">
+<li>
+  <h2>Send us your Google Play email</h2>
+  <p>Email us the Gmail address that's signed in to Google Play on your Android phone. We need it to add you to the test.</p>
+  <!-- TODO: swap to Google Group join link -->
+  <a class="button" href="mailto:tarynmaloney5@gmail.com?subject=ExamMe%20tester%20request&amp;body=Hi%2C%20I'd%20like%20to%20test%20ExamMe.%0A%0AThe%20Gmail%20address%20I%20use%20on%20Google%20Play%20is%3A%20%0A%0APhone%20model%20(optional)%3A%20">Email my request</a>
+</li>
+<li>
+  <h2>Wait for your invite</h2>
+  <p>We'll add your address to the test and email you a link, usually within a day or two.</p>
+</li>
+<li>
+  <h2>Install from Google Play</h2>
+  <p>Open the link on your phone, accept the invite, then download ExamMe from Google Play. Use the same Google account you sent us.</p>
+</li>
+</ol>
+
+<p>Once you're in, see <a href="testing.html">what to test</a> for the features we most need help with.</p>
+
+<div class="box">
+<p><strong>Why email?</strong> ExamMe is in an early, invite-only test on Google Play, so each tester is added by hand. An easier way to join is coming soon.</p>
+</div>
+
+<h2>Questions</h2>
+<p><strong>Is there an iPhone version?</strong> Not yet. ExamMe is Android only for now.</p>
+<p><strong>The invite link says the app isn't available?</strong> Make sure you're signed in to Google Play with the address you sent us. If it still doesn't work, email us and we'll check.</p>
+<p><strong>Feedback or problems?</strong> Email <a href="mailto:tarynmaloney5@gmail.com?subject=ExamMe%20tester%20feedback">tarynmaloney5@gmail.com</a>.</p>
+
+<footer>
+<a href="./">Home</a><a href="testing.html">What to test</a><a href="testers.html">Become a tester</a><a href="privacy.html">Privacy</a>
+<p>© 2026 ExamMe. All rights reserved. Created by Taryn Maloney.</p>
+</footer>
+</main>
+</body>
+</html>
